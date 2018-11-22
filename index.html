@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh" style="height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="/img/favicon.ico">-->
+    <title>Bank of China Asset Management</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--============================================================ JavaScripts ============================================================-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- build:css app/css/layout.bundle.css -->
+    <link type="text/css" href="css/layout.css" rel="stylesheet">
+    <link type="text/css" href="css/topbar.css" rel="stylesheet">
+    <style>
+        /* Import fonts */
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800,900&amp;lang=en");
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+        @import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,900,800,700");
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+    </style>
+    <!-- endbuild -->
+</head>
+<body class="boxed-layout" id="page-top" style="min-height: 100%!important;min-width: 100%!important;">
+	<!-- Main Contents -->
+	<div id="wrapper" class="white-bg">
+        <nav class="navbar sticky-top flex-md-nowrap p-0">
+            <div class="boc-logo-wrapper">
+                <!--<a href='#'><img class="boc-logo-img" src="img/logo.png"></a>-->
+            </div>
+            <div class="topbar-menu navbar-collapse collapse" style="width: 100%;">
+                <ul>
+                    <li id="topbar-compare" class="menu-item">
+                        <div class="navbar-header menu-header">
+                            <a id="topbar-compare-top" href="/products/select"><span>金融數據月報</span></a>
+                        </div>
+                        <div id="topbar-compare" class="sub-menu">
+                            <ul class="menu-panel col-sm-3">
+                                <p class="sub-menu-header">金融統計數字撮要</p>
+                                <li class="sub-menu-item h6">
+                                    <a href="/chatbot">貨幣統計數字</a>
+                                    <a href="/chatbot">銀行體系統計數字</a>
+                                </li>
+                                <li class="sub-menu-item h6">
+                                    <a href="/">聯絡資料</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="topbar-insurance101" class="menu-item">
+                        <div class="navbar-header menu-header">
+                            <a id="topbar-insurance101-top" href="/information"><span>企業理財</span></a>
+                        </div>
+                        <!--
+                        <div id="topbar-insurance101" class="sub-menu">
+                            <ul class="menu-panel col-sm-4">
+                                <p class="sub-menu-header">統計數據</p>
+                                <li class="sub-menu-item h5">
+                                    <a href="/information/statistics#oci_newb">新造保單銷售額</a>
+                                </li>
+                                <li class="sub-menu-item h5">
+                                    <a href="/information/statistics#claimstat">過往醫療索償</a>
+                                </li>
+                                <li class="sub-menu-item h5">
+                                    <a href="/information/statistics#term_mini_calc_sa">定期壽險保額</a>
+                                </li>
+                                <li class="sub-menu-item h6">
+                                    <a href="/information/statistics">更多...</a>
+                                </li>
+                            </ul>
+                            <ul class="menu-panel col-sm-4">
+                                <p class="sub-menu-header">實用資訊</p>
+                                <li class="sub-menu-item h5">
+                                    <a href="/information/#claimforms">申索表格及程序</a>
+                                </li>
+                            </ul>
+                        </div>
+                        -->
+                    </li>
+                    <!--
+                    <li id="topbar-newsroom" class="menu-item">
+                        <div class="navbar-header menu-header">
+                            <a id="topbar-newsroom-top" href="/newsroom"><span></span></a>
+                        </div>
+                    </li>
+                    <li id="topbar-faq" class="menu-item">
+                        <div class="navbar-header menu-header">
+                            <a id="topbar-faq-top" href="/about#faq"><span>常見問題</span></a>
+                        </div>
+                    </li>
+                    -->
+                    <li id="topbar-login" class="menu-item menu-item-login">
+                        <div class="menu-header menu-header-controller">
+                            <span class="topbar-controller-wrapper">
+                                <a class="topbar-controller" data-toggle="modal" data-target="#login_modal" href><!---->客戶登入<!----></a>
+                                <!----> | <!---->
+                                <a class="topbar-controller" href="/open_account"><!---->預約開戶<!----></a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="separator"><div id="separator-red" style="margin-left: 83px;"></div></div>
+		<div id="full_container">
+
+            <div class="clearfix"></div>
+
+         </div>
+    </div>
+
+    <noscript id="deferred-styles">
+        <link type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' rel="stylesheet">
+        <link type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel="stylesheet">
+    </noscript>
+
+</body>
+</html>
